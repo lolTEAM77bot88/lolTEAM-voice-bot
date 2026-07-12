@@ -25,7 +25,7 @@ process.on('unhandledRejection', (reason) => {
 app.listen(PORT, () => {
   console.log('Server running on port ' + PORT);
   try {
-    require('./bot');
+    require('./lolTEAMbot');
     console.log('Bot started');
   } catch (e) {
     console.error('Bot failed to start:', e && e.stack ? e.stack : e);
